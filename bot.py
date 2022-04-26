@@ -1,18 +1,6 @@
-from ast import While
-from cProfile import label
-from distutils.cmd import Command
-from email import message
-from email.mime import image
-from fileinput import filename
-from itertools import count
-from numbers import Number
-import string
+
 from tkinter import messagebox
 from tkinter.font import NORMAL
-from tkinter.ttk import Style
-from turtle import right, width
-from typing_extensions import IntVar
-from xmlrpc.client import Boolean, boolean
 from pyautogui import *
 import pyautogui as pg
 from time import sleep
@@ -20,7 +8,6 @@ import pywhatkit as kt
 import keyboard as k
 import tkinter as tk
 from tkinter import DISABLED, END, W, BooleanVar, Button, Checkbutton, Entry, Label, PhotoImage, Place, StringVar, Tk, filedialog, Text
-import os
 import threading
 
 
@@ -126,7 +113,7 @@ root.iconbitmap(r"icon.ico")
 root.resizable(width=False, height=False)
 canvas = tk.Canvas(root, height=300, width=700, bg="black")
 
-global background_images, count
+global background_images
 background_images = [
         PhotoImage(file="bgOff.png"),
         PhotoImage(file="bgOn.png"),
